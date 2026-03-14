@@ -50,11 +50,9 @@
             padding: 30px 20px;
             text-align: center;
             border-bottom: 2px solid #e30017;
-            /* solid background so sidebar links are not visible through header */
             background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
             position: sticky;
             top: 0;
-            /* higher z-index inside the sidebar so header stays above scrolling links */
             z-index: 1001;
         }
 
@@ -323,7 +321,6 @@
             width: 260px;
             height: 260px;
             background-color: #111;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260"><rect fill="%23111" width="100%" height="100%"/><g fill="%23a8a058" opacity="0.12"><circle cx="130" cy="100" r="48"/></g><text x="50%" y="58%" fill="%23a8a058" font-size="18" font-family="Segoe UI,Arial" text-anchor="middle">Image</text><text x="50%" y="72%" fill="%23a8a058" font-size="12" font-family="Segoe UI,Arial" text-anchor="middle">placeholder</text></svg>');
             background-size: cover;
             background-position: center;
             border-radius: 100%;
@@ -832,19 +829,17 @@
 
             <div class="menu-container">
 
-                    <!-- ADD THIS SEARCH BAR -->
-            <div class="search-wrapper">
-                <input 
-                    type="text" 
-                    id="menuSearch" 
-                    placeholder="🔍 Search dishes, categories..."
-                    autocomplete="off"
-                >
-                <button id="clearSearch" class="clear-btn" style="display: none;">✕</button>
-            </div>
-            
-            <!-- END SEARCH BAR -->
-                
+                <!-- SEARCH BAR -->
+                <div class="search-wrapper">
+                    <input 
+                        type="text" 
+                        id="menuSearch" 
+                        placeholder="🔍 Search dishes, categories..."
+                        autocomplete="off"
+                    >
+                    <button id="clearSearch" class="clear-btn" style="display: none;">✕</button>
+                </div>
+
                 <!-- Ormakal Uppilittathu -->
                 <div class="category" id="uppilittathu">
                     <div class="category-header">
@@ -916,60 +911,11 @@
                     <ul class="menu-list">
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">VEGETABLE SOUP</div>
-                                <div class="item-description">A wholesome mix of fresh vegetables in clear broth</div>
-                            </div>
-                            <span class="item-price">₹155</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">HOT & SOUR VEG SOUP</div>
-                                <div class="item-description">Spicy and tangy vegetable soup with aromatic spices</div>
-                            </div>
-                            <span class="item-price">₹160</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SWEET CORN VEG SOUP</div>
-                                <div class="item-description">Creamy sweet corn with vegetable goodness</div>
-                            </div>
-                            <span class="item-price">₹160</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CREAM OF ROASTED MUSHROOM</div>
-                                <div class="item-description">Rich and creamy soup with roasted mushroom flavor</div>
-                            </div>
-                            <span class="item-price">₹165</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ROASTED TOMATO BASIL SOUP</div>
-                                <div class="item-description">Roasted tomatoes blended with fresh basil</div>
-                            </div>
-                            <span class="item-price">₹155</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CREAM OF MUSHROOM SOUP</div>
-                                <div class="item-description">Classic creamy mushroom soup with herbs</div>
-                            </div>
-                            <span class="item-price">₹165</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
                                 <div class="item-name">CHICKEN SOUP</div>
                                 <div class="item-description">Hearty clear chicken broth with tender pieces</div>
                             </div>
                             <span class="item-price">₹170</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON SOUP</div>
@@ -977,39 +923,20 @@
                             </div>
                             <span class="item-price">₹190</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">SWEET CORN CHICKEN SOUP</div>
-                                <div class="item-description">Sweet corn and chicken in creamy broth</div>
-                            </div>
-                            <span class="item-price">₹170</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SWEET CORN MUTTON SOUP</div>
-                                <div class="item-description">Sweet corn with mutton in flavorful broth</div>
-                            </div>
-                            <span class="item-price">₹190</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON PAYA SOUP</div>
-                                <div class="item-description">Traditional mutton trotters soup, rich and nourishing</div>
+                                <div class="item-name">MUTTON BONE SOUP</div>
+                                <div class="item-description">Traditional mutton bone broth, rich and nourishing</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">THAI MAPHRAW SOUP</div>
-                                <div class="item-description">Thai style spicy and aromatic soup with herbs</div>
+                                <div class="item-name">CREAM OF ROASTED MUSHROOM</div>
+                                <div class="item-description">Rich and creamy soup with roasted mushroom flavor</div>
                             </div>
-                            <span class="item-price">₹189</span>
+                            <span class="item-price">₹165</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CREAM OF ROASTED CHICKEN SOUP</div>
@@ -1017,284 +944,12 @@
                             </div>
                             <span class="item-price">₹189</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CREAM OF CHICKEN SOUP</div>
-                                <div class="item-description">Classic creamy chicken soup with herbs</div>
-                            </div>
-                            <span class="item-price">₹170</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN MANCHOW SOUP</div>
-                                <div class="item-description">Indo-Chinese style chicken soup with crispy noodles</div>
-                            </div>
-                            <span class="item-price">₹175</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">HOT & SOUR CHICKEN SOUP</div>
-                                <div class="item-description">Spicy and tangy chicken soup with vegetables</div>
-                            </div>
-                            <span class="item-price">₹170</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">HOT & SOUR MUTTON SOUP</div>
-                                <div class="item-description">Spicy and tangy mutton soup with rich flavors</div>
-                            </div>
-                            <span class="item-price">₹190</span>
-                        </li>
                     </ul>
                 </div>
 
-                <!-- Tea & Snacks -->
-                <div class="category" id="tea-snacks">
-                    <div class="category-header">
-                        <div class="category-image">
-                            <div class="plate" style="background: radial-gradient(circle at 30% 30%, #daa520, #ffd700);">
-                                <img src="img/img3.png" alt="Food Item" class="plate-image">
-                            </div>
-                        </div>
-                        <h2 class="category-title">Tea & Snacks</h2>
-                        <p class="category-subtitle">Evening Delights</p>
-                    </div>
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">IRANI CHAI</div>
-                                <div class="item-description">Traditional aromatic Persian style tea</div>
-                            </div>
-                            <span class="item-price">₹25</span>
-                        </li>
 
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BLACK TEA</div>
-                                <div class="item-description">Strong and robust black tea</div>
-                            </div>
-                            <span class="item-price">₹18</span>
-                        </li>
+                
 
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">LEMON TEA</div>
-                                <div class="item-description">Refreshing tea with lemon zest</div>
-                            </div>
-                            <span class="item-price">₹20</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">COFFEE</div>
-                                <div class="item-description">Fresh brewed hot coffee</div>
-                            </div>
-                            <span class="item-price">₹30</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BOOST / HORLICS</div>
-                                <div class="item-description">Nutritious health drink</div>
-                            </div>
-                            <span class="item-price">₹35</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PAZHAM PORI</div>
-                                <div class="item-description">Crispy banana fritters</div>
-                            </div>
-                            <span class="item-price">₹25</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">UNNAKKAYA</div>
-                                <div class="item-description">Sweet fried banana rolls with coconut filling</div>
-                            </div>
-                            <span class="item-price">₹49</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BOMBAY TOAST</div>
-                                <div class="item-description">Sweet French toast with masala flavors</div>
-                            </div>
-                            <span class="item-price">₹24</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BUN BUTTER JAM</div>
-                                <div class="item-description">Fresh bun with butter and jam</div>
-                            </div>
-                            <span class="item-price">₹60</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ELA ADA</div>
-                                <div class="item-description">Steamed rice parcels with sweet coconut filling</div>
-                            </div>
-                            <span class="item-price">₹38</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">UNNIYAPPAM</div>
-                                <div class="item-description">Sweet Kerala rice and jaggery balls</div>
-                            </div>
-                            <span class="item-price">₹39</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN SAMOSA</div>
-                                <div class="item-description">Crispy pastry filled with spiced chicken</div>
-                            </div>
-                            <span class="item-price">₹28</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN CUTLET</div>
-                                <div class="item-description">Breaded and fried chicken patty</div>
-                            </div>
-                            <span class="item-price">₹39</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN ROLL</div>
-                                <div class="item-description">Paratha roll filled with chicken and veggies</div>
-                            </div>
-                            <span class="item-price">₹53</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">EGG ROLL</div>
-                                <div class="item-description">Paratha roll with egg and vegetables</div>
-                            </div>
-                            <span class="item-price">₹43</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">VEG ROLL</div>
-                                <div class="item-description">Paratha roll with mixed vegetables</div>
-                            </div>
-                            <span class="item-price">₹35</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ULLI VADA</div>
-                                <div class="item-description">Crispy onion fritters</div>
-                            </div>
-                            <span class="item-price">₹19</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">IDIMUTTA</div>
-                                <div class="item-description">Steamed egg with spicy masala</div>
-                            </div>
-                            <span class="item-price">₹19</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KOREAN CREAM CHEESE BUN</div>
-                                <div class="item-description">Soft bun filled with cream cheese</div>
-                            </div>
-                            <span class="item-price">₹95</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">RED VELVET MUFFIN</div>
-                                <div class="item-description">Moist red velvet muffin with cream cheese frosting</div>
-                            </div>
-                            <span class="item-price">₹104</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Shawarmas -->
-                <div class="category" id="shawarmas">
-                    <div class="category-header">
-                        <div class="category-image">
-                            <div class="plate" style="background: radial-gradient(circle at 30% 30%, #8b4513, #654321);">
-                                <img src="img/img4.png" alt="Food Item" class="plate-image">
-                            </div>
-                        </div>
-                        <h2 class="category-title">Shawarmas</h2>
-                        <p class="category-subtitle">Middle Eastern Wraps</p>
-                    </div>
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN SHAWARMA ROLL</div>
-                                <div class="item-description">Grilled chicken with veggies wrapped</div>
-                            </div>
-                            <span class="item-price">₹89</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN SHAWARMA FULL MEAT WRAP</div>
-                                <div class="item-description">Extra chicken loaded shawarma wrap</div>
-                            </div>
-                            <span class="item-price">₹184</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN SHAWARMA PLATE</div>
-                                <div class="item-description">Grilled chicken with veggies on a plate</div>
-                            </div>
-                            <span class="item-price">₹149</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PANEER SHAWARMA ROLL / PLATE</div>
-                                <div class="item-description">Grilled paneer with roasted vegetables</div>
-                            </div>
-                            <span class="item-price">₹99 / ₹161</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MEXICAN CHICKEN SHAWARMA ROLL / PLATE</div>
-                                <div class="item-description">Chicken shawarma with Mexican spices</div>
-                            </div>
-                            <span class="item-price">₹99 / ₹161</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PERI PERI CHICKEN SHAWARMA ROLL / PLATE</div>
-                                <div class="item-description">Spicy peri peri Chicken shawarma</div>
-                            </div>
-                            <span class="item-price">₹99 / ₹161</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SPECIAL CHICKEN SHAWARMA ROLL / PLATE</div>
-                                <div class="item-description">Full meat loaded with special sauce</div>
-                            </div>
-                            <span class="item-price">₹145 / ₹199</span>
-                        </li>
-                    </ul>
-                </div>
                 <!-- Sandwiches -->
                 <div class="category" id="sandwiches">
                     <div class="category-header">
@@ -1314,7 +969,6 @@
                             </div>
                             <span class="item-price">₹149</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">VEG CHEESE SANDWICH</div>
@@ -1322,7 +976,6 @@
                             </div>
                             <span class="item-price">₹99</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MEXICAN CHICKEN SANDWICH</div>
@@ -1330,7 +983,6 @@
                             </div>
                             <span class="item-price">₹159</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN TIKKA SANDWICH</div>
@@ -1338,7 +990,6 @@
                             </div>
                             <span class="item-price">₹159</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN CHEESE SANDWICH</div>
@@ -1368,7 +1019,6 @@
                             </div>
                             <span class="item-price">₹169 / ₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">DYNAMITE POTATO</div>
@@ -1376,7 +1026,6 @@
                             </div>
                             <span class="item-price">₹169 / ₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">ITALIAN PASTA SALAD</div>
@@ -1384,22 +1033,12 @@
                             </div>
                             <span class="item-price">₹179 / ₹209</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GREEK SALAD</div>
                             </div>
                             <span class="item-price">₹159</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PERSIAN SALAD</div>
-                                <div class="item-description">Middle Eastern salad with herbs and tangy dressing</div>
-                            </div>
-                            <span class="item-price">₹179</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GREEN SALAD</div>
@@ -1429,66 +1068,18 @@
                             </div>
                             <span class="item-price triple">Veg ₹190<br>Chicken ₹280<br>Prawn ₹380</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CREAMY PESTO PASTA</div>
-                            </div>
-                            <span class="item-price triple">Veg ₹190<br>Chicken ₹280<br>Prawn ₹380</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PINK SAUCE PASTA</div>
-                                <div class="item-description">Perfect blend of tomato and white sauce</div>
-                            </div>
-                            <span class="item-price triple">Veg ₹190<br>Chicken ₹280<br>Prawn ₹380</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">RED SAUCE PASTA</div>
-                                <div class="item-description">Tangy tomato sauce with Italian herbs</div>
-                            </div>
-                            <span class="item-price triple">Veg ₹190<br>Chicken ₹280<br>Prawn ₹380</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHEESY PERI PERI PASTA</div>
-                                <div class="item-description">Spicy peri peri sauce with melted cheese</div>
-                            </div>
-                            <span class="item-price">₹280</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CREAMY CHEESY GARLIC PASTA</div>
                             </div>
                             <span class="item-price dual">Veg ₹225<br>Chicken ₹295</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CREAMY CHEESY MUSHROOM PASTA</div>
                                 <div class="item-description">Creamy mushroom sauce with cheese</div>
                             </div>
-                            <span class="item-price dual">  Veg ₹225<br>Chicken ₹295</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHEESY PRAWN PASTA</div>
-                                <div class="item-description">Fresh prawns in creamy cheese sauce</div>
-                            </div>
-                            <span class="item-price">₹380</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BELL PEPPER PASTA</div>
-                            </div>
-                            <span class="item-price dual">Veg ₹190<br>Chicken ₹290</span>
+                            <span class="item-price dual">Veg ₹225<br>Chicken ₹295</span>
                         </li>
                     </ul>
                 </div>
@@ -1512,7 +1103,6 @@
                             </div>
                             <span class="item-price dual">Half ₹299<br>Full ₹567</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GRILLED CHICKEN</div>
@@ -1520,7 +1110,6 @@
                             </div>
                             <span class="item-price dual">Half ₹259<br>Full ₹469</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MEXICAN BBQ CHICKEN</div>
@@ -1528,7 +1117,6 @@
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MOROCCAN BBQ CHICKEN</div>
@@ -1536,7 +1124,6 @@
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">SPANISH BBQ CHICKEN</div>
@@ -1544,21 +1131,18 @@
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KOREAN BBQ CHICKEN</div>
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CRESCENT BBQ CHICKEN</div>
                             </div>
                             <span class="item-price dual">Half ₹269<br>Full ₹479</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PEPPER BBQ CHICKEN</div>
@@ -1566,7 +1150,6 @@
                             </div>
                             <span class="item-price dual">Half ₹279<br>Full ₹499</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BASA FISH BBQ</div>
@@ -1574,7 +1157,6 @@
                             </div>
                             <span class="item-price">₹429</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">POMFRET BBQ</div>
@@ -1582,7 +1164,6 @@
                             </div>
                             <span class="item-price seasonal">SEASONAL</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">WHITE SNAPPER BBQ</div>
@@ -1590,7 +1171,6 @@
                             </div>
                             <span class="item-price seasonal">SEASONAL</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KODUVA FISH BBQ</div>
@@ -1620,14 +1200,6 @@
                             </div>
                             <span class="item-price dual">Half ₹259<br>Full ₹465</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">IRANI TANDOORI CHICKEN</div>
-                            </div>
-                            <span class="item-price dual">Half ₹319<br>Full ₹599</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN TIKKA</div>
@@ -1635,7 +1207,6 @@
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">FISH TIKKA</div>
@@ -1643,7 +1214,6 @@
                             </div>
                             <span class="item-price">₹399</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">RED CHICKEN KEBAB</div>
@@ -1651,7 +1221,6 @@
                             </div>
                             <span class="item-price">₹289</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MALAI CHICKEN KEBAB</div>
@@ -1659,7 +1228,6 @@
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MINT CHICKEN KEBAB</div>
@@ -1667,23 +1235,20 @@
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">GARLIC/GINGER CHICKEN KEBAB</div>
-                                <div class="item-description">Chicken kebab with garlic-ginger paste marinade</div>
+                                <div class="item-name">GARLIC CHICKEN KEBAB</div>
+                                <div class="item-description">Chicken kebab with garlic paste marinade</div>
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">MUTTON SEEKH KEBAB</div>
-                                <div class="item-description">Minced mutton kebab on skewers with spices</div>
+                                <div class="item-name">GINGER CHICKEN KEBAB</div>
+                                <div class="item-description">Chicken kebab with ginger paste marinade</div>
                             </div>
-                            <span class="item-price">₹489</span>
+                            <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN SEEKH KEBAB</div>
@@ -1691,7 +1256,6 @@
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PRAWNS TIKKA</div>
@@ -1699,7 +1263,6 @@
                             </div>
                             <span class="item-price">₹409</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUSHROOM TIKKA</div>
@@ -1707,7 +1270,6 @@
                             </div>
                             <span class="item-price">₹249</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PINEAPPLE TIKKA</div>
@@ -1715,7 +1277,6 @@
                             </div>
                             <span class="item-price">₹259</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">SPANISH CHICKEN KEBAB</div>
@@ -1723,7 +1284,6 @@
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MOROCCAN CHICKEN KEBAB</div>
@@ -1731,7 +1291,6 @@
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MEXICAN CHICKEN KEBAB</div>
@@ -1739,7 +1298,6 @@
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KOREAN CHICKEN KEBAB</div>
@@ -1772,18 +1330,6 @@
                             </div>
                             <span class="item-price platter-price">₹1099</span>
                         </li>
-
-                        <li class="menu-item platter-item">
-                            <div>
-                                <div class="item-name">CHICKEN KEBAB PLATTER</div>
-                                <div class="item-description">
-                                    <div class="platter-includes">Includes:</div>
-                                    <div class="platter-items">Red Chicken, Malai Chicken, Mint Chicken, Spanish Chicken, Mexican Chicken</div>
-                                </div>
-                            </div>
-                            <span class="item-price platter-price">₹749</span>
-                        </li>
-
                         <li class="menu-item platter-item">
                             <div>
                                 <div class="item-name">SEAFOOD PLATTER</div>
@@ -1794,16 +1340,15 @@
                             </div>
                             <span class="item-price platter-price">₹1199</span>
                         </li>
-
                         <li class="menu-item platter-item">
                             <div>
-                                <div class="item-name">CAJUN SEAFOOD PLATTER</div>
+                                <div class="item-name">CHICKEN KEBAB PLATTER</div>
                                 <div class="item-description">
                                     <div class="platter-includes">Includes:</div>
-                                    <div class="platter-items">Prawns, Squid, Crab, Chicken Sausage, Soft Potatoes, Sweet Corn with Spicy Garlic Butter and Cajun Seasoning</div>
+                                    <div class="platter-items">Red Chicken, Malai Chicken, Mint Chicken, Spanish Chicken, Mexican Chicken</div>
                                 </div>
                             </div>
-                            <span class="item-price platter-price">₹1399</span>
+                            <span class="item-price platter-price">₹749</span>
                         </li>
                     </ul>
                 </div>
@@ -1827,39 +1372,6 @@
                             </div>
                             <span class="item-price">Quarter ₹155</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN FRY</div>
-                                <div class="item-description">Classic crispy fried chicken</div>
-                            </div>
-                            <span class="item-price dual">Bone ₹239<br>Boneless ₹260</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN TAWA FRY</div>
-                                <div class="item-description">Pan-fried chicken on hot griddle</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">THREADED CHICKEN</div>
-                                <div class="item-description">Thinly sliced, thread-like fried chicken</div>
-                            </div>
-                            <span class="item-price">₹306</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KERALA CHICKEN FRIED</div>
-                                <div class="item-description">Traditional Kerala masala fried chicken</div>
-                            </div>
-                            <span class="item-price dual">Bone ₹260<br>Boneless ₹289</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN 65</div>
@@ -1867,39 +1379,6 @@
                             </div>
                             <span class="item-price dual">Bone ₹239<br>Boneless ₹259</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN LIVER FRY</div>
-                                <div class="item-description">Spicy fried chicken liver</div>
-                            </div>
-                            <span class="item-price">₹239</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHETTINADU CHICKEN FRY</div>
-                                <div class="item-description">Spicy Chettinad style fried chicken</div>
-                            </div>
-                            <span class="item-price dual">Bone ₹249<br>Boneless ₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">THAI FRIED CHICKEN</div>
-                                <div class="item-description">Crispy chicken with Thai spices</div>
-                            </div>
-                            <span class="item-price">₹289</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">HONEY GARLIC CHICKEN</div>
-                                <div class="item-description">Crispy chicken in sweet honey garlic glaze</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">DYNAMITE CHICKEN</div>
@@ -1907,15 +1386,6 @@
                             </div>
                             <span class="item-price">₹249</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ORANGE CHICKEN</div>
-                                <div class="item-description">Crispy chicken in tangy orange sauce</div>
-                            </div>
-                            <span class="item-price">₹289</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN TIKKA CHEESE BALL</div>
@@ -1923,7 +1393,6 @@
                             </div>
                             <span class="item-price">₹269</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN FINGER</div>
@@ -1931,15 +1400,6 @@
                             </div>
                             <span class="item-price">₹289</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">DRAGON CHICKEN</div>
-                                <div class="item-description">Spicy Indo-Chinese style fried chicken</div>
-                            </div>
-                            <span class="item-price">₹289</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN LOLLIPOP</div>
@@ -1947,37 +1407,19 @@
                             </div>
                             <span class="item-price dual">Dry ₹239<br>Saucy ₹255</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN KONDATTOM</div>
-                                <div class="item-description">Chicken pieces wrapped in egg net</div>
-                            </div>
-                            <span class="item-price">₹289</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BLACK PEPPER CHICKEN</div>
-                                <div class="item-description">Chicken with black pepper crust</div>
-                            </div>
-                            <span class="item-price">₹311</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CRISPY CHICKEN</div>
-                                <div class="item-description">Extra crispy fried chicken</div>
-                            </div>
-                            <span class="item-price">₹289</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KERALA CHICKEN 65</div>
                                 <div class="item-description">Kerala style spicy chicken 65</div>
                             </div>
                             <span class="item-price dual">Bone ₹249<br>Boneless ₹269</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">DRAGON CHICKEN</div>
+                                <div class="item-description">Spicy Indo-Chinese style fried chicken</div>
+                            </div>
+                            <span class="item-price">₹289</span>
                         </li>
                     </ul>
                 </div>
@@ -2000,56 +1442,36 @@
                             </div>
                             <span class="item-price">₹260</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN WINGS IN CREAMY BBQ SAUCE</div>
-                            </div>
-                            <span class="item-price">₹270</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN WINGS IN SPICY CHEESE GARLIC SAUCE</div>
                             </div>
                             <span class="item-price">₹279</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHILLI TERIYAKI WINGS</div>
-                            </div>
-                            <span class="item-price">₹260</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CRESCENT BBQ CHICKEN WINGS</div>
                             </div>
                             <span class="item-price">₹260</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KOREAN BBQ CHICKEN WINGS</div>
                             </div>
                             <span class="item-price">₹260</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MEXICAN BBQ CHICKEN WINGS</div>
                             </div>
                             <span class="item-price">₹260</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MOROCCAN BBQ CHICKEN WINGS</div>
                             </div>
                             <span class="item-price">₹260</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">SPANISH BBQ CHICKEN WINGS</div>
@@ -2077,77 +1499,56 @@
                             </div>
                             <span class="item-price">₹399</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PRAWNS POLLICHATHU</div>
                             </div>
                             <span class="item-price">₹379</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">AYALA POLLICHATHU</div>
                             </div>
                             <span class="item-price">₹235</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BAASA POLLICHATHU</div>
                             </div>
                             <span class="item-price">₹445</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN POLLICHATHU</div>
                             </div>
                             <span class="item-price">₹309</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON POLLICHATHU</div>
                             </div>
                             <span class="item-price">₹399</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">SEAR FISH POLLICHATHU</div>
                             </div>
                             <span class="item-price">₹369</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">POMFRET POLLICHATHU</div>
                             </div>
                             <span class="item-price seasonal">SEASONAL</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">SNAPPER POLLICHATHU</div>
                             </div>
                             <span class="item-price seasonal">SEASONAL</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SQUID POLLICHATHU</div>
-                            </div>
-                            <span class="item-price">₹369</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MATHI POLLICHATHU</div>
-                            </div>
-                            <span class="item-price">₹199</span>
-                        </li>
-                    </ul>
+                        
+                    
                 </div>
 
                 <!-- Seafood Specials -->
@@ -2168,110 +1569,59 @@
                             </div>
                             <span class="item-price">₹289</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">DRAGON PRAWNS</div>
                             </div>
                             <span class="item-price">₹369</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KARIMEEN FRY</div>
                             </div>
                             <span class="item-price seasonal">SEASONAL</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PRAWNS FRY</div>
                             </div>
                             <span class="item-price">₹369</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">FINGER FISH</div>
                             </div>
                             <span class="item-price">₹369</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">NETHILY FRY</div>
                             </div>
                             <span class="item-price">₹259</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">SQUID VARATTIYATHU</div>
-                            </div>
-                            <span class="item-price">₹329</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SQUID 65</div>
-                            </div>
-                            <span class="item-price">₹339</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">AYALA TAWA FRY</div>
+                                <div class="item-name">AYALA FRY</div>
                             </div>
                             <span class="item-price">₹189</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHILLY FISH</div>
-                            </div>
-                            <span class="item-price">₹349</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">FISH FRIED (SEAR FISH)</div>
-                            </div>
-                            <span class="item-price seasonal">SEASONAL</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CRAB FRY</div>
-                            </div>
-                            <span class="item-price">₹329</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">POMFRET FRY</div>
                             </div>
                             <span class="item-price seasonal">SEASONAL</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">KODUVA TAWA FRY</div>
+                                <div class="item-name">KODUVA FRY</div>
                             </div>
                             <span class="item-price seasonal">SEASONAL</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">SNAPPER TAWA FRY</div>
+                                <div class="item-name">SNAPPER FRY</div>
                             </div>
                             <span class="item-price seasonal">SEASONAL</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MATHI TAWA FRY (2 PCS)</div>
-                            </div>
-                            <span class="item-price">₹89</span>
                         </li>
                     </ul>
                 </div>
@@ -2290,102 +1640,22 @@
                     <ul class="menu-list">
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">MUTTON STEW</div>
-                            </div>
-                            <span class="item-price">₹349</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
                                 <div class="item-name">MUTTON CHUKKA</div>
                             </div>
                             <span class="item-price">₹365</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON CURRY</div>
                             </div>
                             <span class="item-price">₹339</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KADAI MUTTON</div>
-                            </div>
-                            <span class="item-price">₹349</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON CHETTINADU</div>
                             </div>
                             <span class="item-price">₹349</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON PEPPER MASALA</div>
-                            </div>
-                            <span class="item-price">₹355</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON ROGAN JOSH</div>
-                            </div>
-                            <span class="item-price">₹355</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON LIVER FRY</div>
-                            </div>
-                            <span class="item-price">₹339</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON PAYA</div>
-                            </div>
-                            <span class="item-price">₹309</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON PEPPER PAYA</div>
-                            </div>
-                            <span class="item-price">₹329</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON PAYA FRY</div>
-                            </div>
-                            <span class="item-price">₹329</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON BRAIN FRY</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON BRAIN PODIMAS</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON BOTI</div>
-                            </div>
-                            <span class="item-price">₹309</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KERALA MUTTON MASALA</div>
@@ -2413,56 +1683,24 @@
                             </div>
                             <span class="item-price">₹249</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PANEER TIKKA</div>
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHILLY PANEER</div>
-                            </div>
-                            <span class="item-price">₹259</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KADAI PANEER GRAVY</div>
-                            </div>
-                            <span class="item-price">₹259</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PANEER BUTTER MASALA</div>
                             </div>
                             <span class="item-price">₹269</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PANEER MUTTER MASALA</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PANEER TIKKA MASALA</div>
-                            </div>
-                            <span class="item-price">₹279</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">DRAGON PANEER</div>
                             </div>
                             <span class="item-price">₹289</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PANEER MANCHURIAN</div>
@@ -2490,110 +1728,59 @@
                             </div>
                             <span class="item-price">₹179</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BABYCORN GOLDEN FRY</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUSHROOM 65</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">ALO GOBI</div>
-                            </div>
-                            <span class="item-price">₹179</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BABYCORN DRAGON / MANCHURIAN</div>
+                                <div class="item-name">BABYCORN DRAGON</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">DHAL FRY</div>
+                                <div class="item-name">BABYCORN MANCHURIAN</div>
+                            </div>
+                            <span class="item-price">₹199</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">GREEN PEAS MASALA</div>
                             </div>
                             <span class="item-price">₹179</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">GREEN PEAS MASALA/KADALA CURRY</div>
+                                <div class="item-name">KADALA CURRY</div>
                             </div>
                             <span class="item-price">₹179</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUSHROOM MASALA</div>
                             </div>
                             <span class="item-price">₹209</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">MUSHROOM PEPPER FRY</div>
-                            </div>
-                            <span class="item-price">₹209</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHILLY MUSHROOM</div>
-                            </div>
-                            <span class="item-price">₹209</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GOBI MANCHURIAN/CHILLI</div>
+                                <div class="item-name">GOBI MANCHURIAN</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">VEG STEW</div>
-                            </div>
-                            <span class="item-price">₹199</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BOILED VEG</div>
+                                <div class="item-name">VEG CURRY</div>
                             </div>
                             <span class="item-price">₹149</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">VEG CURRY / VEG CHETTINADU</div>
-                            </div>
-                            <span class="item-price">₹149</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KADAI VEG</div>
-                            </div>
-                            <span class="item-price">₹179</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MALAI KOFTA</div>
-                            </div>
-                            <span class="item-price">₹199</span>
                         </li>
                     </ul>
                 </div>
@@ -2612,107 +1799,33 @@
                     <ul class="menu-list">
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">CHICKEN STEW</div>
-                            </div>
-                            <span class="item-price dual">Bone: ₹249<br>Boneless: ₹289</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">THAI RED CHICKEN CURRY</div>
-                            </div>
-                            <span class="item-price dual">Bone: ₹269<br>Boneless: ₹299</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MALAYSIAN CHICKEN CURRY</div>
-                            </div>
-                            <span class="item-price dual">Bone: ₹269<br>Boneless: ₹299</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
                                 <div class="item-name">KERALA CHICKEN CURRY</div>
                             </div>
                             <span class="item-price dual">Bone: ₹259<br>Boneless: ₹289</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BUTTER CHICKEN MASALA</div>
                             </div>
                             <span class="item-price dual">Bone: ₹289<br>Boneless: ₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN CURRY</div>
                             </div>
                             <span class="item-price dual">Bone: ₹229<br>Boneless: ₹249</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN PEPPER MASALA</div>
                             </div>
                             <span class="item-price dual">Bone: ₹249<br>Boneless: ₹289</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN MANCHURIAN</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHILLY CHICKEN</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN HYDERABADI</div>
-                            </div>
-                            <span class="item-price dual">Bone: ₹249<br>Boneless: ₹289</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHETTINADU CHICKEN CURRY</div>
                             </div>
                             <span class="item-price dual">Bone: ₹249<br>Boneless: ₹289</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MALABAR CHILLI CHICKEN</div>
-                            </div>
-                            <span class="item-price dual">Bone: ₹249<br>Boneless: ₹299</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KADAI CHICKEN</div>
-                            </div>
-                            <span class="item-price dual">Bone: ₹249<br>Boneless: ₹299</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN TIKKA MASALA</div>
-                            </div>
-                            <span class="item-price">₹299</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KOZHI MULAKITTATHU</div>
-                            </div>
-                            <span class="item-price">₹239</span>
                         </li>
                     </ul>
                 </div>
@@ -2735,70 +1848,24 @@
                             </div>
                             <span class="item-price">₹39</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">HALF BOILED</div>
-                            </div>
-                            <span class="item-price">₹54</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">OMELETTE</div>
-                            </div>
-                            <span class="item-price">₹60</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">EGG PODIMAS / KALAKKI</div>
-                            </div>
-                            <span class="item-price">₹85</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">EGG ONION FRY</div>
-                            </div>
-                            <span class="item-price">₹129</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">EGG MASALA</div>
                             </div>
                             <span class="item-price">₹169</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">EGG CURRY</div>
                             </div>
                             <span class="item-price">₹159</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KERALA EGG CURRY</div>
-                            </div>
-                            <span class="item-price">₹169</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHILLI EGG</div>
-                            </div>
-                            <span class="item-price">₹169</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">EGG BUTTER MASALA</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KADAI EGG / CHETTINADU</div>
@@ -2808,68 +1875,6 @@
                     </ul>
                 </div>
 
-                <!-- Kerala Puttu -->
-                <div class="category" id="puttu">
-                    <div class="category-header">
-                        <div class="category-image">
-                            <div class="plate" style="background: radial-gradient(circle at 30% 30%, #d2691e, #8b4513);">
-                                <img src="img/img20.png" alt="Food Item" class="plate-image">
-                            </div>
-                        </div>
-                        <h2 class="category-title">Kerala Puttu</h2>
-                        <p class="category-subtitle">Steamed Rice Cakes</p>
-                    </div>
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PUTTU</div>
-                            </div>
-                            <span class="item-price">₹30</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BANANA GHEE PUTTU</div>
-                            </div>
-                            <span class="item-price">₹126</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN KEEMA PUTTU</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON KEEMA PUTTU</div>
-                            </div>
-                            <span class="item-price">₹259</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN LIVER KEEMA PUTTU</div>
-                            </div>
-                            <span class="item-price">₹185</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON LIVER KEEMA PUTTU</div>
-                            </div>
-                            <span class="item-price">₹259</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PRAWNS KEEMA PUTTU</div>
-                            </div>
-                            <span class="item-price">₹279</span>
-                        </li>
-                    </ul>
-                </div>
 
                 <!-- Indian Breads -->
                 <div class="category" id="breads">
@@ -2885,184 +1890,87 @@
                     <ul class="menu-list">
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">NOOL PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹39</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">LAYERED CHAPATHI</div>
-                            </div>
-                            <span class="item-price">₹49</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GHEE CHAPATHI</div>
-                            </div>
-                            <span class="item-price">₹55</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">COIN BUTTER PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹49</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
                                 <div class="item-name">PAROTTA</div>
                             </div>
                             <span class="item-price">₹25</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHAPATHI</div>
                             </div>
                             <span class="item-price">₹29</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">WHEAT PAROTTA</div>
                             </div>
                             <span class="item-price">₹30</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SPECIAL KERALA PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹49</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">TANDOORI ROTTI</div>
                             </div>
                             <span class="item-price">₹55</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">NAAN</div>
                             </div>
                             <span class="item-price">₹59</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BUTTER NAAN</div>
                             </div>
                             <span class="item-price">₹69</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BUTTER ROTTI</div>
                             </div>
                             <span class="item-price">₹64</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GARLIC NAAN</div>
                             </div>
                             <span class="item-price">₹79</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHILLY CHEESE NAAN</div>
                             </div>
                             <span class="item-price">₹87</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">IDIYAPPAM</div>
                             </div>
                             <span class="item-price">₹19</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KERALA RICE PATHIRI</div>
                             </div>
                             <span class="item-price">₹17</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">APPAM</div>
-                            </div>
-                            <span class="item-price">₹29</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BULLSEYE APPAM</div>
-                            </div>
-                            <span class="item-price">₹42</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KULCHA</div>
                             </div>
                             <span class="item-price">₹59</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PHULKA</div>
-                            </div>
-                            <span class="item-price">₹25</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MASALA KULCHA</div>
                             </div>
                             <span class="item-price">₹69</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KUBOOS</div>
                             </div>
                             <span class="item-price">₹20</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN KARI DOSA</div>
-                            </div>
-                            <span class="item-price">₹239</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON KARI DOSA</div>
-                            </div>
-                            <span class="item-price">₹304</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PRAWNS KARI DOSA</div>
-                            </div>
-                            <span class="item-price">₹304</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">IDIYAPPAM BIRIYANI CHICKEN</div>
-                            </div>
-                            <span class="item-price">₹247</span>
                         </li>
                     </ul>
                 </div>
@@ -3097,75 +2005,6 @@
                             </div>
                             <span class="item-price">₹209</span>
                         </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">VEG / EGG KOTHU PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹209</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN KOTHU PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON KOTHU PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹369</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PRAWNS KOTHU PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹369</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN LIVER KOTHU PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹249</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON LIVER KOTHU PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹369</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ROASTED PANEER KOTHU PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹259</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CEYLON STUFFED CHICKEN PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹279</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CEYLON STUFFED MUTTON PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹382</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CEYLON STUFFED EGG PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹221</span>
-                        </li>
                     </ul>
                 </div>
 
@@ -3187,42 +2026,24 @@
                             </div>
                             <span class="item-price">₹209</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUSHROOM KIZHI PAROTTA</div>
                             </div>
                             <span class="item-price">₹239</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN KIZHI PAROTTA</div>
                             </div>
                             <span class="item-price">₹279</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON KIZHI PAROTTA</div>
                             </div>
                             <span class="item-price">₹379</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN LIVER KIZHI PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹267</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON LIVER KIZHI PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹369</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PRAWN KIZHI PAROTTA</div>
@@ -3250,46 +2071,29 @@
                             </div>
                             <span class="item-price">₹99</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN KAPPA BIRIYANI</div>
                             </div>
                             <span class="item-price">₹255</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON KAPPA BIRIYANI</div>
                             </div>
                             <span class="item-price">₹369</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PRAWN KAPPA BIRIYANI</div>
                             </div>
                             <span class="item-price">₹379</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">VEG KAPPA BIRIYANI</div>
                             </div>
                             <span class="item-price">₹189</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON BOTI KAPPA BIRIYANI</div>
-                            </div>
-                            <span class="item-price">₹336</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PAAL KAPPA</div>
-                            </div>
-                            <span class="item-price">₹209</span>
                         </li>
                         <li class="menu-item">
                             <div>
@@ -3297,12 +2101,23 @@
                             </div>
                             <span class="item-price">₹209</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">KAPPA WITH MATHI MULAKITTATHU</div>
+                                <div class="item-name">KAPPA WITH MUTTON CURRY</div>
                             </div>
-                            <span class="item-price">₹189</span>
+                            <span class="item-price">₹209</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">KAPPA WITH CHICKEN CURRY</div>
+                            </div>
+                            <span class="item-price">₹209</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">PAAL KAPPA</div>
+                            </div>
+                            <span class="item-price">₹209</span>
                         </li>
                     </ul>
                 </div>
@@ -3321,37 +2136,15 @@
                     <ul class="menu-list">
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">SPICY THAI RAMEN BOWL CHICKEN</div>
+                                <div class="item-name">KOREAN RAMEN BOWL PANEER</div>
                             </div>
-                            <span class="item-price">₹329</span>
+                            <span class="item-price">₹299</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">TEMTAMEN RAMEN BOWL CHICKEN</div>
-                            </div>
-                            <span class="item-price">₹329</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">KOREAN RAMEN BOWL CHICKEN</div>
                             </div>
                             <span class="item-price">₹329</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SPICY THAI RAMEN BOWL PANEER</div>
-                            </div>
-                            <span class="item-price">₹299</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">TEMTAMEN RAMEN BOWL PANEER</div>
-                            </div>
-                            <span class="item-price">₹299</span>
                         </li>
                     </ul>
                 </div>
@@ -3365,7 +2158,7 @@
                             </div>
                         </div>
                         <h2 class="category-title">Meals</h2>
-                        <p class="category-subtitle">Complete Thali</p>
+                        <p class="category-subtitle">Complete Thali · Lunch Time Only</p>
                     </div>
                     <ul class="menu-list">
                         <li class="menu-item">
@@ -3374,40 +2167,29 @@
                             </div>
                             <span class="item-price">₹155</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">FISH CURRY MEALS</div>
                             </div>
                             <span class="item-price">₹180</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN CURRY MEALS</div>
                             </div>
                             <span class="item-price">₹175</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">AYALA FRY MEALS</div>
                             </div>
                             <span class="item-price">₹309</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON CURRY MEALS</div>
                             </div>
                             <span class="item-price">₹215</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MATHI CURRY MEALS</div>
-                            </div>
-                            <span class="item-price">₹170</span>
                         </li>
                     </ul>
                 </div>
@@ -3426,102 +2208,76 @@
                     <ul class="menu-list">
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">CHICKEN DUM BIRIYANI</div>
+                                <div class="item-name">CHICKEN BIRIYANI</div>
                             </div>
                             <span class="item-price">₹239</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">CHICKEN MATKA BIRIYANI</div>
+                                <div class="item-name">MUTTON BIRIYANI</div>
                             </div>
-                            <span class="item-price">₹289</span>
+                            <span class="item-price">₹329</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">MUTTON MATKA BIRIYANI</div>
-                            </div>
-                            <span class="item-price">₹399</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CRESCENT SPL CHICKEN BIRIYANI</div>
+                                <div class="item-name">CRESCENT SPL BIRIYANI</div>
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MALABAR CHICKEN BIRIYANI</div>
                             </div>
                             <span class="item-price">₹289</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN MUGHAL BIRIYANI</div>
                             </div>
                             <span class="item-price">₹299</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON DUM BIRIYANI</div>
-                            </div>
-                            <span class="item-price">₹329</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MALABAR MUTTON BIRIYANI</div>
-                            </div>
-                            <span class="item-price">₹359</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON MUGHAL BIRIYANI</div>
                             </div>
                             <span class="item-price">₹369</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON CHUKKA BIRIYANI</div>
                             </div>
                             <span class="item-price">₹399</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">EGG BIRIYANI</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">FISH / PRAWN BIRIYANI</div>
+                                <div class="item-name">FISH BIRIYANI</div>
                             </div>
                             <span class="item-price">₹399</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">MALABAR FISH / PRAWN BIRIYANI</div>
+                                <div class="item-name">PRAWNS BIRIYANI</div>
                             </div>
-                            <span class="item-price">₹419</span>
+                            <span class="item-price">₹399</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">PANEER / MUSHROOM BIRIYANI</div>
+                                <div class="item-name">PANEER BIRIYANI</div>
                             </div>
                             <span class="item-price">₹289</span>
                         </li>
-
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">MUSHROOM BIRIYANI</div>
+                            </div>
+                            <span class="item-price">₹289</span>
+                        </li>
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">VEG BIRIYANI</div>
@@ -3545,102 +2301,100 @@
                     <ul class="menu-list">
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">NASI GORENG</div>
+                                <div class="item-name">BURNT GARLIC VEG FRIED RICE</div>
                             </div>
-                            <span class="item-price">₹329</span>
+                            <span class="item-price">₹249</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">SINGAPORE FRIED RICE</div>
+                                <div class="item-name">CHILLI BUTTER VEG FRIED RICE</div>
                             </div>
-                            <span class="item-price">₹279</span>
+                            <span class="item-price">₹249</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">JAPANESE OMU RICE</div>
-                            </div>
-                            <span class="item-price">₹299</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BURNT GARLIC FRIED RICE</div>
-                            </div>
-                            <span class="item-price">₹289</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHILLI BUTTER FRIED RICE</div>
-                            </div>
-                            <span class="item-price">₹289</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">HOT GARLIC FRIED RICE</div>
                             </div>
                             <span class="item-price">₹289</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">PINEAPPLE & BROCCOLI FRIED RICE</div>
+                                <div class="item-name">VEG FRIED RICE</div>
                             </div>
-                            <span class="item-price">₹319</span>
+                            <span class="item-price">₹209</span>
                         </li>
-
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">SCHEZWAN VEG FRIED RICE</div>
+                            </div>
+                            <span class="item-price">₹229</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">MIXED VEG FRIED RICE</div>
+                            </div>
+                            <span class="item-price">₹279</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">PANEER FRIED RICE</div>
+                            </div>
+                            <span class="item-price">₹259</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">MUSHROOM FRIED RICE</div>
+                            </div>
+                            <span class="item-price">₹249</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">BURNT GARLIC CHICKEN FRIED RICE</div>
+                            </div>
+                            <span class="item-price">₹289</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">CHILLI BUTTER CHICKEN FRIED RICE</div>
+                            </div>
+                            <span class="item-price">₹289</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">HOT GARLIC CHICKEN FRIED RICE</div>
+                            </div>
+                            <span class="item-price">₹289</span>
+                        </li>
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN FRIED RICE</div>
                             </div>
                             <span class="item-price">₹249</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">MEXICAN CHICKEN RICE</div>
+                                <div class="item-name">SCHEZWAN CHICKEN FRIED RICE</div>
                             </div>
                             <span class="item-price">₹269</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">ROASTED CHICKEN RICE</div>
+                                <div class="item-name">MIXED NON VEG FRIED RICE</div>
                             </div>
-                            <span class="item-price">₹279</span>
+                            <span class="item-price">₹369</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">EGG FRIED RICE</div>
                             </div>
                             <span class="item-price">₹219</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">PRAWNS FRIED RICE</div>
                             </div>
                             <span class="item-price">₹369</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SCHEZWAN FRIED RICE</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MIXED FRIED RICE</div>
-                            </div>
-                            <span class="item-price">₹369</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON FRIED RICE</div>
@@ -3664,114 +2418,69 @@
                     <ul class="menu-list">
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">VEG / CHICKEN NOODLES</div>
+                                <div class="item-name">VEG NOODLES</div>
                             </div>
-                            <span class="item-price dual">Veg: ₹209<br>Chicken: ₹249</span>
+                            <span class="item-price">₹209</span>
                         </li>
-
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">CHICKEN NOODLES</div>
+                            </div>
+                            <span class="item-price">₹249</span>
+                        </li>
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">EGG NOODLES</div>
                             </div>
                             <span class="item-price">₹219</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">BURNT GARLIC NOODLES VEG/CHICKEN</div>
+                                <div class="item-name">SCHEZWAN VEG NOODLES</div>
                             </div>
-                            <span class="item-price dual">Veg: ₹239<br>Chicken: ₹289</span>
+                            <span class="item-price">₹229</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">CHILLI BUTTER NOODLES VEG/CHICKEN</div>
+                                <div class="item-name">SCHEZWAN CHICKEN NOODLES</div>
                             </div>
-                            <span class="item-price dual">Veg: ₹229<br>Chicken: ₹289</span>
+                            <span class="item-price">₹269</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">HOT GARLIC NOODLES VEG/CHICKEN</div>
-                            </div>
-                            <span class="item-price dual">Veg: ₹239<br>Chicken: ₹289</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PINEAPPLE & BROCCOLI NOODLES VEG/CHICKEN</div>
-                            </div>
-                            <span class="item-price dual">Veg: ₹279<br>Chicken: ₹319</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SCHEZWAN NOODLES VEG/CHICKEN</div>
-                            </div>
-                            <span class="item-price dual">Veg: ₹229<br>Chicken: ₹269</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MIXED VEG NOODLES</div>
                             </div>
                             <span class="item-price">₹279</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PANEER NOODLES</div>
-                            </div>
-                            <span class="item-price">₹269</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">THAI BASIL NOODLES VEG/CHICKEN</div>
-                            </div>
-                            <span class="item-price dual">Veg: ₹249<br>Chicken: ₹299</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUSHROOM NOODLES</div>
-                            </div>
-                            <span class="item-price">₹259</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SINGAPORE CHICKEN NOODLES</div>
-                            </div>
-                            <span class="item-price">₹279</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MIXED NON VEG NOODLES</div>
                             </div>
                             <span class="item-price">₹369</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">MEXICAN NOODLES VEG/CHICKEN</div>
+                                <div class="item-name">MUSHROOM NOODLES</div>
                             </div>
-                            <span class="item-price dual">Veg: ₹229<br>Chicken: ₹269</span>
+                            <span class="item-price">₹259</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">PRAWNS NOODLES</div>
+                                <div class="item-name">PANEER NOODLES</div>
                             </div>
-                            <span class="item-price">₹369</span>
+                            <span class="item-price">₹269</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON NOODLES</div>
                             </div>
                             <span class="item-price">₹360</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">PRAWNS NOODLES</div>
+                            </div>
+                            <span class="item-price">₹369</span>
                         </li>
                     </ul>
                 </div>
@@ -3788,191 +2497,114 @@
                         <p class="category-subtitle">Value Meals</p>
                     </div>
                     <ul class="menu-list">
+                        <!-- Indian Bread Combos -->
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BBQ CHICKEN + 2 PAROTTA</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GRILL CHICKEN + 2 PAROTTA</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">TANDOORI CHICKEN + 2 PAROTTA</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
-                                <div class="item-name">KOZHI FRY CHICKEN + 2 PAROTTA</div>
+                                <div class="item-name">KOZHI PORICHATHU + 2 PAROTTA</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN CURRY + 2 PAROTTA</div>
                             </div>
                             <span class="item-price">₹199</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BUTTER CHICKEN MASALA + 2 PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹219</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PANEER BUTTER MASALA + 2 PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹219</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHICKEN STEW + 2 APPAM</div>
-                            </div>
-                            <span class="item-price">₹219</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUTTON PAYA + 2 APPAM</div>
-                            </div>
-                            <span class="item-price">₹229</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">VEG CURRY + 2 PAROTTA</div>
-                            </div>
-                            <span class="item-price">₹180</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">MUTTON CURRY + 2 PAROTTA</div>
                             </div>
                             <span class="item-price">₹229</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PUTTU + KADALA CURRY</div>
-                            </div>
-                            <span class="item-price">₹139</span>
-                        </li>
-
+                        <!-- Ghee Rice Combos -->
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GHEE RICE</div>
                             </div>
                             <span class="item-price">₹189</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GHEE RICE + CHICKEN CURRY</div>
                             </div>
                             <span class="item-price">₹279</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GHEE RICE + VEG CURRY</div>
-                            </div>
-                            <span class="item-price">₹229</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GHEE RICE + FISH CURRY</div>
-                            </div>
-                            <span class="item-price">₹309</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GHEE RICE + MUTTON CURRY</div>
                             </div>
                             <span class="item-price">₹329</span>
                         </li>
-
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">GHEE RICE + FISH CURRY</div>
+                            </div>
+                            <span class="item-price">₹309</span>
+                        </li>
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GHEE RICE + TANDOORI CHICKEN</div>
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GHEE RICE + BBQ CHICKEN</div>
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GHEE RICE + GRILL CHICKEN</div>
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">GHEE RICE + KOZHI FRY</div>
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GHEE RICE + KOZHI MULAKITTATHU</div>
-                            </div>
-                            <span class="item-price">₹279</span>
-                        </li>
-
+                        <!-- Biriyani Rice Combos -->
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BIRIYANI RICE + TANDOORI CHICKEN</div>
                             </div>
                             <span class="item-price">₹329</span>
                         </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BIRIYANI RICE + KOZHI FRY</div>
-                            </div>
-                            <span class="item-price">₹329</span>
-                        </li>
-
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BIRIYANI RICE + CHICKEN 65</div>
-                            </div>
-                            <span class="item-price">₹329</span>
-                        </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BIRIYANI RICE + BBQ CHICKEN</div>
                             </div>
                             <span class="item-price">₹329</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">BIRIYANI RICE + GRILL CHICKEN</div>
+                            </div>
+                            <span class="item-price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div>
+                                <div class="item-name">BIRIYANI RICE + KOZHI FRY</div>
                             </div>
                             <span class="item-price">₹329</span>
                         </li>
@@ -3997,42 +2629,36 @@
                             </div>
                             <span class="item-price">₹339</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN FRIED RICE/NOODLES WITH CHICKEN MANCHURIAN</div>
                             </div>
                             <span class="item-price">₹339</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">CHICKEN FRIED RICE/NOODLES WITH CHICKEN LOLLIPOP (3PCS)</div>
                             </div>
                             <span class="item-price">₹339</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">VEG FRIED RICE/NOODLES WITH GOBI MANCHURIAN</div>
                             </div>
                             <span class="item-price">₹319</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">2 PAROTTA/CHAPATHI WITH CHILLI CHICKEN</div>
                             </div>
                             <span class="item-price">₹219</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">2 PAROTTA/CHAPATHI WITH CHICKEN MANCHURIAN</div>
                             </div>
                             <span class="item-price">₹219</span>
                         </li>
-
                         <li class="menu-item">
                             <div>
                                 <div class="item-name">2 PAROTTA/CHAPATHI WITH GOBI MANCHURIAN</div>
@@ -4054,102 +2680,22 @@
                         <p class="category-subtitle">Natural & Refreshing</p>
                     </div>
                     <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">FRESH LIME SODA</div>
-                            </div>
-                            <span class="item-price">₹49</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">FRESH LIME JUICE</div>
-                            </div>
-                            <span class="item-price">₹45</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SWEET LIME JUICE</div>
-                            </div>
-                            <span class="item-price">₹80</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GRAPE JUICE</div>
-                            </div>
-                            <span class="item-price">₹95</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PINEAPPLE JUICE</div>
-                            </div>
-                            <span class="item-price">₹85</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">WATERMELON JUICE</div>
-                            </div>
-                            <span class="item-price">₹78</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ORANGE JUICE</div>
-                            </div>
-                            <span class="item-price">₹99</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">POMEGRANATE JUICE</div>
-                            </div>
-                            <span class="item-price">₹110</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PAPAYA JUICE</div>
-                            </div>
-                            <span class="item-price">₹90</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">NANNARI SARBATH</div>
-                            </div>
-                            <span class="item-price">₹55</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">NANNARI SODA SARBATH</div>
-                            </div>
-                            <span class="item-price">₹59</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MINT LIME JUICE</div>
-                            </div>
-                            <span class="item-price">₹55</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MINT LIME SODA</div>
-                            </div>
-                            <span class="item-price">₹55</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">APPLE JUICE</div>
-                            </div>
-                            <span class="item-price">₹98</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MUSKMELON JUICE</div>
-                            </div>
-                            <span class="item-price">₹90</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">STRAWBERRY JUICE</div>
-                            </div>
-                            <span class="item-price">₹136</span>
-                        </li>
+                        <li class="menu-item"><div><div class="item-name">FRESH LIME SODA</div></div><span class="item-price">₹49</span></li>
+                        <li class="menu-item"><div><div class="item-name">FRESH LIME JUICE</div></div><span class="item-price">₹45</span></li>
+                        <li class="menu-item"><div><div class="item-name">SWEET LIME JUICE</div></div><span class="item-price">₹80</span></li>
+                        <li class="menu-item"><div><div class="item-name">GRAPE JUICE</div></div><span class="item-price">₹95</span></li>
+                        <li class="menu-item"><div><div class="item-name">PINEAPPLE JUICE</div></div><span class="item-price">₹85</span></li>
+                        <li class="menu-item"><div><div class="item-name">WATERMELON JUICE</div></div><span class="item-price">₹78</span></li>
+                        <li class="menu-item"><div><div class="item-name">ORANGE JUICE</div></div><span class="item-price">₹99</span></li>
+                        <li class="menu-item"><div><div class="item-name">POMEGRANATE JUICE</div></div><span class="item-price">₹110</span></li>
+                        <li class="menu-item"><div><div class="item-name">PAPAYA JUICE</div></div><span class="item-price">₹90</span></li>
+                        <li class="menu-item"><div><div class="item-name">NANNARI SARBATH</div></div><span class="item-price">₹55</span></li>
+                        <li class="menu-item"><div><div class="item-name">NANNARI SODA SARBATH</div></div><span class="item-price">₹59</span></li>
+                        <li class="menu-item"><div><div class="item-name">MINT LIME JUICE</div></div><span class="item-price">₹55</span></li>
+                        <li class="menu-item"><div><div class="item-name">MINT LIME SODA</div></div><span class="item-price">₹55</span></li>
+                        <li class="menu-item"><div><div class="item-name">APPLE JUICE</div></div><span class="item-price">₹98</span></li>
+                        <li class="menu-item"><div><div class="item-name">MUSKMELON JUICE</div></div><span class="item-price">₹90</span></li>
+                        <li class="menu-item"><div><div class="item-name">STRAWBERRY JUICE</div></div><span class="item-price">₹136</span></li>
                     </ul>
                 </div>
 
@@ -4165,108 +2711,23 @@
                         <p class="category-subtitle">Creamy & Delicious</p>
                     </div>
                     <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHOCOLATE THICK SHAKE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHIKKU SHAKE</div>
-                            </div>
-                            <span class="item-price">₹139</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">POMEGRANATE SHAKE</div>
-                            </div>
-                            <span class="item-price">₹130</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">VANILLA THICK SHAKE</div>
-                            </div>
-                            <span class="item-price">₹164</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">STRAWBERRY THICK SHAKE</div>
-                            </div>
-                            <span class="item-price">₹164</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PISTA THICK SHAKE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BLACK CURRANT THICK SHAKE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">APPLE MILK SHAKE</div>
-                            </div>
-                            <span class="item-price">₹135</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">FIG SHAKE</div>
-                            </div>
-                            <span class="item-price">₹145</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BUTTER FRUIT SHAKE</div>
-                            </div>
-                            <span class="item-price">₹149</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">DATES SHAKE</div>
-                            </div>
-                            <span class="item-price">₹159</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BUTTERSCOTCH SHAKE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">JUGGED SPECIALS</div>
-                            </div>
-                            <span class="item-price">₹159</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SHARJAH SHAKE</div>
-                            </div>
-                            <span class="item-price">₹139</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MANGO MILK SHAKE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BANANA SHAKE</div>
-                            </div>
-                            <span class="item-price">₹129</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">JIGARTHANDA (DRY FRUITS)</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
+                        <li class="menu-item"><div><div class="item-name">CHOCOLATE THICK SHAKE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">CHIKKU SHAKE</div></div><span class="item-price">₹139</span></li>
+                        <li class="menu-item"><div><div class="item-name">POMEGRANATE SHAKE</div></div><span class="item-price">₹130</span></li>
+                        <li class="menu-item"><div><div class="item-name">VANILLA THICK SHAKE</div></div><span class="item-price">₹164</span></li>
+                        <li class="menu-item"><div><div class="item-name">STRAWBERRY THICK SHAKE</div></div><span class="item-price">₹164</span></li>
+                        <li class="menu-item"><div><div class="item-name">PISTA THICK SHAKE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">BLACK CURRANT THICK SHAKE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">APPLE MILK SHAKE</div></div><span class="item-price">₹135</span></li>
+                        <li class="menu-item"><div><div class="item-name">FIG SHAKE</div></div><span class="item-price">₹145</span></li>
+                        <li class="menu-item"><div><div class="item-name">BUTTER FRUIT SHAKE</div></div><span class="item-price">₹149</span></li>
+                        <li class="menu-item"><div><div class="item-name">DATES SHAKE</div></div><span class="item-price">₹159</span></li>
+                        <li class="menu-item"><div><div class="item-name">BUTTERSCOTCH SHAKE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">JUGGED SPECIALS</div></div><span class="item-price">₹159</span></li>
+                        <li class="menu-item"><div><div class="item-name">SHARJAH SHAKE</div></div><span class="item-price">₹139</span></li>
+                        <li class="menu-item"><div><div class="item-name">MANGO MILK SHAKE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">BANANA SHAKE</div></div><span class="item-price">₹129</span></li>
+                        <li class="menu-item"><div><div class="item-name">JIGARTHANDA (DRY FRUITS)</div></div><span class="item-price">₹189</span></li>
                     </ul>
                 </div>
 
@@ -4282,66 +2743,16 @@
                         <p class="category-subtitle">Sweet & Creamy</p>
                     </div>
                     <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MIX FRUIT FALOODA</div>
-                            </div>
-                            <span class="item-price dual">Regular: ₹179<br>Special: ₹220</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ROYAL FALOODA</div>
-                            </div>
-                            <span class="item-price">₹210</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">DRY FRUIT FALOODA</div>
-                            </div>
-                            <span class="item-price dual">Regular: ₹189<br>Special: ₹230</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KULFI DRY FRUIT FALOODA</div>
-                            </div>
-                            <span class="item-price dual">Regular: ₹189<br>Special: ₹230</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">TENDER COCONUT FALOODA</div>
-                            </div>
-                            <span class="item-price dual">Regular: ₹189<br>Special: ₹230</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHOCOLATE FULLY LOADED FALOODA</div>
-                            </div>
-                            <span class="item-price dual">Regular: ₹189<br>Special: ₹230</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MANGO FALOODA</div>
-                            </div>
-                            <span class="item-price dual">Regular: ₹179<br>Special: ₹220</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GULAB JAMUN FALOODA</div>
-                            </div>
-                            <span class="item-price">₹230</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BERRY UP</div>
-                            </div>
-                            <span class="item-price">₹230</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PULL ME UP</div>
-                            </div>
-                            <span class="item-price">₹230</span>
-                        </li>
+                        <li class="menu-item"><div><div class="item-name">MIX FRUIT FALOODA</div></div><span class="item-price dual">Regular: ₹179<br>Special: ₹220</span></li>
+                        <li class="menu-item"><div><div class="item-name">ROYAL FALOODA</div></div><span class="item-price">₹210</span></li>
+                        <li class="menu-item"><div><div class="item-name">DRY FRUIT FALOODA</div></div><span class="item-price dual">Regular: ₹189<br>Special: ₹230</span></li>
+                        <li class="menu-item"><div><div class="item-name">KULFI DRY FRUIT FALOODA</div></div><span class="item-price dual">Regular: ₹189<br>Special: ₹230</span></li>
+                        <li class="menu-item"><div><div class="item-name">TENDER COCONUT FALOODA</div></div><span class="item-price dual">Regular: ₹189<br>Special: ₹230</span></li>
+                        <li class="menu-item"><div><div class="item-name">CHOCOLATE FULLY LOADED FALOODA</div></div><span class="item-price dual">Regular: ₹189<br>Special: ₹230</span></li>
+                        <li class="menu-item"><div><div class="item-name">MANGO FALOODA</div></div><span class="item-price dual">Regular: ₹179<br>Special: ₹220</span></li>
+                        <li class="menu-item"><div><div class="item-name">GULAB JAMUN FALOODA</div></div><span class="item-price">₹230</span></li>
+                        <li class="menu-item"><div><div class="item-name">BERRY UP</div></div><span class="item-price">₹230</span></li>
+                        <li class="menu-item"><div><div class="item-name">PULL ME UP</div></div><span class="item-price">₹230</span></li>
                     </ul>
                 </div>
 
@@ -4357,150 +2768,30 @@
                         <p class="category-subtitle">Sweet Indulgence</p>
                     </div>
                     <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">AVIL MILK</div>
-                            </div>
-                            <span class="item-price">₹135</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CUT FRUITS</div>
-                            </div>
-                            <span class="item-price">₹104</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">FRUIT SALAD</div>
-                            </div>
-                            <span class="item-price">₹104</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">FRUIT SALAD WITH ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹175</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ADA PAYASAM</div>
-                            </div>
-                            <span class="item-price">₹120</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CRÈME CARAMEL FLAN</div>
-                            </div>
-                            <span class="item-price">₹140</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CUSTARD FRUIT</div>
-                            </div>
-                            <span class="item-price">₹120</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">COCONUT SOUFFLÉ</div>
-                            </div>
-                            <span class="item-price">₹125</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GULAB JAMUN (2 PCS)</div>
-                            </div>
-                            <span class="item-price">₹99</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GULAB JAMUN WITH ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹159</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">RABDI GULAB JAMUN</div>
-                            </div>
-                            <span class="item-price">₹159</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BROWNIE</div>
-                            </div>
-                            <span class="item-price">₹105</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BROWNIE WITH ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹180</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SIZZLING BROWNIE</div>
-                            </div>
-                            <span class="item-price">₹220</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CLOUD PUDDING</div>
-                            </div>
-                            <span class="item-price">₹140</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">ARABIAN GRAPE</div>
-                            </div>
-                            <span class="item-price">₹120</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KUNAFA</div>
-                            </div>
-                            <span class="item-price">₹229</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BISCOFF KUNAFA</div>
-                            </div>
-                            <span class="item-price">₹274</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KUNAFA WITH ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹289</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BISCOFF KUNAFA WITH ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹324</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">LAVA FAVOUR</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CRÈME BRÛLÉE</div>
-                            </div>
-                            <span class="item-price">₹174</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">SHAHI TUKDA</div>
-                            </div>
-                            <span class="item-price">₹169</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">RED VELVET MUFFIN WITH ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
+                        <li class="menu-item"><div><div class="item-name">AVIL MILK</div></div><span class="item-price">₹135</span></li>
+                        <li class="menu-item"><div><div class="item-name">CUT FRUITS</div></div><span class="item-price">₹104</span></li>
+                        <li class="menu-item"><div><div class="item-name">FRUIT SALAD</div></div><span class="item-price">₹104</span></li>
+                        <li class="menu-item"><div><div class="item-name">FRUIT SALAD WITH ICE CREAM</div></div><span class="item-price">₹175</span></li>
+                        <li class="menu-item"><div><div class="item-name">ADA PAYASAM</div></div><span class="item-price">₹120</span></li>
+                        <li class="menu-item"><div><div class="item-name">CRÈME CARAMEL FLAN</div></div><span class="item-price">₹140</span></li>
+                        <li class="menu-item"><div><div class="item-name">CUSTARD FRUIT</div></div><span class="item-price">₹120</span></li>
+                        <li class="menu-item"><div><div class="item-name">COCONUT SOUFFLÉ</div></div><span class="item-price">₹125</span></li>
+                        <li class="menu-item"><div><div class="item-name">GULAB JAMUN (2 PCS)</div></div><span class="item-price">₹99</span></li>
+                        <li class="menu-item"><div><div class="item-name">GULAB JAMUN WITH ICE CREAM</div></div><span class="item-price">₹159</span></li>
+                        <li class="menu-item"><div><div class="item-name">RABDI GULAB JAMUN</div></div><span class="item-price">₹159</span></li>
+                        <li class="menu-item"><div><div class="item-name">BROWNIE</div></div><span class="item-price">₹105</span></li>
+                        <li class="menu-item"><div><div class="item-name">BROWNIE WITH ICE CREAM</div></div><span class="item-price">₹180</span></li>
+                        <li class="menu-item"><div><div class="item-name">SIZZLING BROWNIE</div></div><span class="item-price">₹220</span></li>
+                        <li class="menu-item"><div><div class="item-name">CLOUD PUDDING</div></div><span class="item-price">₹140</span></li>
+                        <li class="menu-item"><div><div class="item-name">ARABIAN GRAPE</div></div><span class="item-price">₹120</span></li>
+                        <li class="menu-item"><div><div class="item-name">KUNAFA</div></div><span class="item-price">₹229</span></li>
+                        <li class="menu-item"><div><div class="item-name">BISCOFF KUNAFA</div></div><span class="item-price">₹274</span></li>
+                        <li class="menu-item"><div><div class="item-name">KUNAFA WITH ICE CREAM</div></div><span class="item-price">₹289</span></li>
+                        <li class="menu-item"><div><div class="item-name">BISCOFF KUNAFA WITH ICE CREAM</div></div><span class="item-price">₹324</span></li>
+                        <li class="menu-item"><div><div class="item-name">LAVA FAVOUR</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">CRÈME BRÛLÉE</div></div><span class="item-price">₹174</span></li>
+                        <li class="menu-item"><div><div class="item-name">SHAHI TUKDA</div></div><span class="item-price">₹169</span></li>
+                        <li class="menu-item"><div><div class="item-name">RED VELVET MUFFIN WITH ICE CREAM</div></div><span class="item-price">₹189</span></li>
                     </ul>
                 </div>
 
@@ -4516,36 +2807,11 @@
                         <p class="category-subtitle">Creamy & Refreshing</p>
                     </div>
                     <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">STRAWBERRY SMOOTHIE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BLUEBERRY SMOOTHIE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PINEAPPLE SMOOTHIE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MANGO SMOOTHIE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BUTTERSCOTCH SMOOTHIE</div>
-                            </div>
-                            <span class="item-price">₹189</span>
-                        </li>
+                        <li class="menu-item"><div><div class="item-name">STRAWBERRY SMOOTHIE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">BLUEBERRY SMOOTHIE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">PINEAPPLE SMOOTHIE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">MANGO SMOOTHIE</div></div><span class="item-price">₹189</span></li>
+                        <li class="menu-item"><div><div class="item-name">BUTTERSCOTCH SMOOTHIE</div></div><span class="item-price">₹189</span></li>
                     </ul>
                 </div>
 
@@ -4561,54 +2827,14 @@
                         <p class="category-subtitle">Cool & Refreshing</p>
                     </div>
                     <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BLUEBERRY MOJITO</div>
-                            </div>
-                            <span class="item-price">₹135</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">WATERMELON MOJITO</div>
-                            </div>
-                            <span class="item-price">₹135</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">GREEN APPLE MOJITO</div>
-                            </div>
-                            <span class="item-price">₹135</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">COOL BLUE MOJITO</div>
-                            </div>
-                            <span class="item-price">₹140</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MINT MOJITO</div>
-                            </div>
-                            <span class="item-price">₹135</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">STRAWBERRY MOJITO</div>
-                            </div>
-                            <span class="item-price">₹140</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PEACH MOJITO</div>
-                            </div>
-                            <span class="item-price">₹135</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PASSION FRUIT MOJITO</div>
-                            </div>
-                            <span class="item-price">₹135</span>
-                        </li>
+                        <li class="menu-item"><div><div class="item-name">BLUEBERRY MOJITO</div></div><span class="item-price">₹135</span></li>
+                        <li class="menu-item"><div><div class="item-name">WATERMELON MOJITO</div></div><span class="item-price">₹135</span></li>
+                        <li class="menu-item"><div><div class="item-name">GREEN APPLE MOJITO</div></div><span class="item-price">₹135</span></li>
+                        <li class="menu-item"><div><div class="item-name">COOL BLUE MOJITO</div></div><span class="item-price">₹140</span></li>
+                        <li class="menu-item"><div><div class="item-name">MINT MOJITO</div></div><span class="item-price">₹135</span></li>
+                        <li class="menu-item"><div><div class="item-name">STRAWBERRY MOJITO</div></div><span class="item-price">₹140</span></li>
+                        <li class="menu-item"><div><div class="item-name">PEACH MOJITO</div></div><span class="item-price">₹135</span></li>
+                        <li class="menu-item"><div><div class="item-name">PASSION FRUIT MOJITO</div></div><span class="item-price">₹135</span></li>
                     </ul>
                 </div>
 
@@ -4624,66 +2850,16 @@
                         <p class="category-subtitle">Sweet & Chilled</p>
                     </div>
                     <ul class="menu-list">
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">STRAWBERRY ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹104</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">MANGO ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹130</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">VANILLA ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹104</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BUTTERSCOTCH ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹130</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">BLACK CURRANT ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹140</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">PISTA ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹130</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">CHOCOLATE ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹130</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">KULFI ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹140</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">RED VELVET ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹140</span>
-                        </li>
-                        <li class="menu-item">
-                            <div>
-                                <div class="item-name">TENDER COCONUT ICE CREAM</div>
-                            </div>
-                            <span class="item-price">₹140</span>
-                        </li>
+                        <li class="menu-item"><div><div class="item-name">STRAWBERRY ICE CREAM</div></div><span class="item-price">₹104</span></li>
+                        <li class="menu-item"><div><div class="item-name">MANGO ICE CREAM</div></div><span class="item-price">₹130</span></li>
+                        <li class="menu-item"><div><div class="item-name">VANILLA ICE CREAM</div></div><span class="item-price">₹104</span></li>
+                        <li class="menu-item"><div><div class="item-name">BUTTERSCOTCH ICE CREAM</div></div><span class="item-price">₹130</span></li>
+                        <li class="menu-item"><div><div class="item-name">BLACK CURRANT ICE CREAM</div></div><span class="item-price">₹140</span></li>
+                        <li class="menu-item"><div><div class="item-name">PISTA ICE CREAM</div></div><span class="item-price">₹130</span></li>
+                        <li class="menu-item"><div><div class="item-name">CHOCOLATE ICE CREAM</div></div><span class="item-price">₹130</span></li>
+                        <li class="menu-item"><div><div class="item-name">KULFI ICE CREAM</div></div><span class="item-price">₹140</span></li>
+                        <li class="menu-item"><div><div class="item-name">RED VELVET ICE CREAM</div></div><span class="item-price">₹140</span></li>
+                        <li class="menu-item"><div><div class="item-name">TENDER COCONUT ICE CREAM</div></div><span class="item-price">₹140</span></li>
                     </ul>
                 </div>
 
@@ -4733,43 +2909,22 @@
             });
         });
 
-        // Smooth scrolling for navigation links (EXISTING CODE ABOVE)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const targetPosition = target.offsetTop - 20;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // ADD THIS SEARCH FUNCTIONALITY
+        // SEARCH FUNCTIONALITY
         const searchInput = document.getElementById('menuSearch');
         const clearBtn = document.getElementById('clearSearch');
         const menuContainer = document.querySelector('.menu-container');
         let noResultsMessage = null;
 
-        // Search functionality
         searchInput.addEventListener('input', function(e) {
             const searchTerm = e.target.value.toLowerCase().trim();
-            
-            // Show/hide clear button
             clearBtn.style.display = searchTerm ? 'flex' : 'none';
-            
             if (!searchTerm) {
                 resetSearch();
                 return;
             }
-
             performSearch(searchTerm);
         });
 
-        // Clear button
         clearBtn.addEventListener('click', function() {
             searchInput.value = '';
             clearBtn.style.display = 'none';
@@ -4794,8 +2949,6 @@
                         item.classList.remove('hidden');
                         categoryHasMatch = true;
                         hasResults = true;
-                        
-                        // Highlight matching text
                         highlightText(item.querySelector('.item-name'), searchTerm);
                         if (item.querySelector('.item-description')) {
                             highlightText(item.querySelector('.item-description'), searchTerm);
@@ -4805,7 +2958,6 @@
                     }
                 });
 
-                // Hide category if no matches
                 if (categoryHasMatch) {
                     category.classList.remove('hidden');
                 } else {
@@ -4813,7 +2965,6 @@
                 }
             });
 
-            // Show "no results" message
             if (!hasResults) {
                 showNoResults(searchTerm);
             } else {
@@ -4829,15 +2980,11 @@
         }
 
         function resetSearch() {
-            // Show all categories and items
             document.querySelectorAll('.category').forEach(cat => cat.classList.remove('hidden'));
             document.querySelectorAll('.menu-item').forEach(item => item.classList.remove('hidden'));
-            
-            // Remove highlights
             document.querySelectorAll('.item-name, .item-description').forEach(el => {
                 el.innerHTML = el.textContent;
             });
-
             removeNoResults();
         }
 
@@ -4860,7 +3007,6 @@
             }
         }
 
-        // Allow ESC key to clear search
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && searchInput.value) {
                 searchInput.value = '';
@@ -4868,9 +3014,7 @@
                 resetSearch();
             }
         });
-        // END SEARCH FUNCTIONALITY 
 
-        // Ensure category images lazy-load and hide broken images (keeps SVG placeholder)
         document.querySelectorAll('.category-image img').forEach(img => {
             try { img.setAttribute('loading', 'lazy'); } catch (e) {}
             img.addEventListener('error', function () {
